@@ -1,0 +1,35 @@
+body { 
+    background-color: rgb(29, 27, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    position: absolute;
+    top: 40%;
+}
+.toggle {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50px;
+}
+.toggle:after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    top: 13px;
+    left: 10px;
+    background-color:aqua;
+}
+.toggle:hover {
+    background-color: aqua;
+    transition: 2s ease all;
+}
+.toggle:hover::after {
+    background-color: blue;
+    left: 65px;
+    transition: 2s ease all;
+}
