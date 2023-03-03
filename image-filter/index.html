@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="output">
+            <div id="img-output">
+                
+            </div>
+            <div id="img-filter">
+                
+            </div>
+        </div>
+        Image: 
+        <select name="image" id="image" oninput="image()">
+            <option value="athena.jpg">athena</option>
+            <option value="mona-lisa.jpg">mona-lisa</option>
+            <option value="theKiss.jpg">theKiss</option>
+            <option value="young-pearl.jpg">young-pearl</option>
+        </select>
+        <select name="filter" id="filter" oninput="filter()">
+            <option value="linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5))">Lighten</option>
+            <option value="linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))">Darken</option>
+        </select>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
