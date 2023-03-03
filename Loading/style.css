@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(24, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    position: absolute;
+    top: 20%;
+    height: 125px;
+    width: 125px;
+    display: grid;
+    grid-template-areas: '1 2';
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(-360deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+.one {
+    background-color: #F63D3A;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.two {
+    background-color: #19A68C;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.three {
+    background-color: #193B48;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.four {
+    background-color: #FDA543;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
